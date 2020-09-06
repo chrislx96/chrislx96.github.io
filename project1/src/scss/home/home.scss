@@ -52,12 +52,20 @@ html {
 
   .introduction {
     width: 100%;
+    color:white;
+
+
     &__content {
       display: flex;
       flex-direction: column;
     }
+
     .about-me {
       padding: 0.6rem;
+      &__title{
+        margin-top: 0.4rem;
+        margin-bottom: 0.6 rem;
+      }
     }
 
     dl {

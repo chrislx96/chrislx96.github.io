@@ -2,121 +2,133 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="scss/main.css" />
+  <link rel="stylesheet" href="scss/index.css" />
+
+  <script src="js/main.js" defer></script>
 
   <title>Portfolio</title>
 </head>
 
 <body>
+
   <header>
-    <nav class="d-flex justify-content-between navbar navbar-expand-lg navbar-dark bg-primary">
-
-      <a class="navbar-brand" href="#">C.L.</a>
-
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <!-- nav brand -->
+      <a class="navbar-brand" href="#intro">S.S.</a>
+      <!-- nav bar button -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
+      <!-- nav bar -->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Introduction<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#intro">Introduction<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Education & Work</a>
+            <a class="nav-link" href="#resume">Resume</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Life</a>
+            <a class="nav-link" href="#life">Life</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
-
+        <!-- personal account link -->
         <span class="navbar-right">
           <a href="https://www.facebook.com/profile.php?id=100013254193630" target="_blank"><img
               src="assets/img/facebook.png" /></a>
           <a href="https://github.com/chrislx96" target="_blank"><img src="assets/img/github.png" /></a>
-          <a href="https://www.linkedin.com/in/xiang-li-932972192/" target="_blank"><img src="assets/img/linkedin.png" /></a>
+          <a href="https://www.linkedin.com/in/xiang-li-932972192/" target="_blank"><img
+              src="assets/img/linkedin.png" /></a>
         </span>
-
       </div>
-
     </nav>
+
   </header>
 
   <main>
-    <div class="background">
-
-      <div class="container">
-
-        <div class="namecard row">
-
-          <div class="photo col-md-4 col-sm-12">
-            <img class="photo__img" src="assets/img/spongeBob.png">
-            <div class="photo__description">
-              <h2>SpongeBob Squarepants</h2>
-              <p>Krusty Krab fry cook</p>
-            </div>
-          </div>
-
-          <div class="introduction col-md-8 col-sm-12">
-            <div>
-              <div class="introduction__content row">
-
-                <div class="col">
-                  <div class="about-me">
-                    <div class="about-me__title">
-                      <h3>Who am I?</h3>
-                    </div class="about-me__content">
-                    <p>Hello! I’m SpongeBob Squarepants. I work at the Krusty Krab, Bikini Bottom's most popular
-                      restaurant, where I am a fry cook and prepare all food served at the restaurant, most notably
-                      Krabby Patties.</p>
-                  </div>
-                </div>
-
-                <div class="col">
-                  <dl>
-                    <dt>Age: </dt>
-                    <dd>34</dd>
-                    <dt>Residence: </dt>
-                    <dd>Pacific Ocean</dd>
-                    <dt>Address: </dt>
-                    <dd>124 Conch Street, Bikini Bottom, Pacific Ocean</dd>
-                    <dt>E-mail: </dt>
-                    <dd>spongeBob@gmail.com</dd>
-                    <dt>Phone: </dt>
-                    <dd>2333333333</dd>
-                  </dl>
-                </div>
-
+    <!-- introduction page -->
+    <section data-page="intro">
+      <div class="background">
+        <div class="container">
+          <div class="namecard row">
+            <div class="photo col-md-4 col-sm-12">
+              <img class="photo__img" src="assets/img/spongeBob.png">
+              <div class="photo__description">
+                <h2>SpongeBob Squarepants</h2>
+                <p>Krusty Krab fry cook</p>
               </div>
             </div>
-
+            <div class="introduction col-md-8 col-sm-12">
+              <div>
+                <div class="introduction__content row">
+                  <div class="col">
+                    <div class="about-me">
+                      <div class="about-me__title">
+                        <h3>Who am I?</h3>
+                      </div class="about-me__content">
+                      <p>Hello! I’m SpongeBob Squarepants. I work at the Krusty Krab, Bikini Bottom's most popular
+                        restaurant, where I am a fry cook and prepare all food served at the restaurant, most notably
+                        Krabby Patties.</p>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <dl>
+                      <dt>Age: </dt>
+                      <dd>34</dd>
+                      <dt>Residence: </dt>
+                      <dd>Pacific Ocean</dd>
+                      <dt>Address: </dt>
+                      <dd>124 Conch Street, Bikini Bottom, Pacific Ocean</dd>
+                      <dt>E-mail: </dt>
+                      <dd><a href="mailto:spongeBob@gmail.com" style="color:rgb(97, 192, 230)">spongeBob@gmail.com</a>
+                      </dd>
+                      <dt>Phone: </dt>
+                      <dd>2333333333</dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-
         </div>
-
       </div>
-
-    </div>
+    </section>
+    <!-- resume Page -->
+    <section data-page="resume">
+      <div class="background">
+        <div class="container">
+          <span>Resume</span>
+        </div>
+      </div>
+    </section>
+    <!-- personal life page -->
+    <section data-page="life">
+      <div class="background">
+        <div class="container">
+          <span>Personal Life</span>
+        </div>
+      </div>
+    </section>
+    <!-- contact page -->
+    <section data-page="contact">
+      <div class="background">
+        <div class="container">
+          <span>Contact</span>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer>
     <div class="copyrights">© 2020 All rights reserved. Designed by Chris Lee.</a></div>
   </footer>
-
-
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
@@ -126,6 +138,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
+
 </body>
 
 </html>
