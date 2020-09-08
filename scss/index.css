@@ -8,7 +8,7 @@ html header {
 
 html .sticky {
   position: fixed;
-  z-index: 1;
+  z-index: 99;
   top: 0;
   width: 100%;
 }
@@ -38,7 +38,6 @@ html .background .container {
 html .background .container .namecard {
   height: auto;
   width: 80%;
-  max-height: 80%;
   border-radius: 4%;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -95,43 +94,36 @@ html .background .container .namecard .introduction__content {
 }
 
 html .background .container .namecard .introduction__content .about-me {
-  padding: 0.6rem;
   width: 100%;
 }
 
 html .background .container .namecard .introduction__content .about-me__title {
-  margin-top: 0.4rem;
-  margin-bottom: 0.6 rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   width: 100%;
   height: auto;
 }
 
-html .background .container .namecard .introduction__content dl {
-  min-width: 400px;
-  max-width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  padding: 0.6rem;
+html .background .container .namecard .introduction__content .about-me__content {
+  padding: 8%;
 }
 
-html .background .container .namecard .introduction__content dt {
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%;
+html .background .container .namecard .introduction__detail {
+  width: 100%;
+  padding: 0.6rem;
+  margin: 2%;
+}
+
+html .background .container .namecard .introduction__detail .col-4 {
+  width: 100%;
+  height: auto;
   padding: 0.2rem;
   text-align: justify;
 }
 
-html .background .container .namecard .introduction__content dd {
-  -ms-flex-preferred-size: 70%;
-      flex-basis: 70%;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+html .background .container .namecard .introduction__detail .col-8 {
+  width: 100%;
+  height: auto;
   margin: 0;
   padding: 0.2rem;
 }
