@@ -10,8 +10,8 @@ function init() {
   lifePage = document.querySelector('main > section[data-page="life"]');
   contactPage = document.querySelector('main > section[data-page="contact"]');
   allPages = document.querySelectorAll("main section");
-  hideAllPages()
-  revealPage(introPage)
+  hideAllPages();
+  revealPage(introPage);
 }
 
 function hideAllPages() {
@@ -66,18 +66,19 @@ function pageNavigator() {
   }
 }
 
-// function stickyHeader() {
-//   let header = document.querySelector('header nav');
-//   let sticky = header.offsetTop;
-//   if (window.pageYOffset > sticky) {
-//     header.classList.add("sticky");
-//   } else {
-//     header.classList.remove("sticky");
-//   }
-// }
-// window.onscroll = function () {
-//   stickyHeader();
-// };
+function stickyHeader() {
+  let header = document.querySelector("header");
+  let sticky = header.offsetTop;
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+
+window.onscroll = function () {
+  stickyHeader();
+};
 
 window.onload = function () {
   init();
