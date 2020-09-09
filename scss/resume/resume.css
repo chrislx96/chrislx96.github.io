@@ -21,26 +21,26 @@ html .resumePage__header h2 {
   padding: 2rem;
 }
 
-html .resumePage__content {
+html .resumePage__experience {
   width: 90%;
   margin-left: 5%;
   margin-top: 3%;
   margin-bottom: 3%;
 }
 
-html .resumePage__content .timeline__title {
+html .resumePage__experience .timeline__title {
   text-align: left;
 }
 
-html .resumePage__content .timeline__title h3 {
+html .resumePage__experience .timeline__title h3 {
   padding: 1rem;
 }
 
-html .resumePage__content .timeline__content {
+html .resumePage__experience .timeline__content {
   border-left: 3px ridge white;
 }
 
-html .resumePage__content .timeline__content__item {
+html .resumePage__experience .timeline__content__item {
   border-left: solid;
   text-align: justify;
   position: relative;
@@ -51,12 +51,12 @@ html .resumePage__content .timeline__content__item {
   border-left: 1px solid #1fa9e0;
 }
 
-html .resumePage__content .timeline__content__item:hover {
+html .resumePage__experience .timeline__content__item:hover {
   -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
 }
 
-html .resumePage__content .timeline__content__item::before {
+html .resumePage__experience .timeline__content__item::before {
   content: "";
   display: inline-block;
   position: absolute;
@@ -69,7 +69,7 @@ html .resumePage__content .timeline__content__item::before {
   z-index: 2;
 }
 
-html .resumePage__content .timeline__content__item::after {
+html .resumePage__experience .timeline__content__item::after {
   content: "";
   display: inline-block;
   position: absolute;

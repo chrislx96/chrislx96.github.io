@@ -5,6 +5,12 @@ html {
 
   header {
     background: skyblue;
+    .navbrand {
+      color: white;
+      font-size: large;
+      padding-left: 0.5rem;
+      padding-right: 1rem;
+    }
   }
 
   .sticky {
@@ -74,9 +80,8 @@ html {
                 width: 100%;
                 height: auto;
               }
-              &__content{
+              &__content {
                 padding: 8%;
-
               }
             }
           }

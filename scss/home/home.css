@@ -6,6 +6,13 @@ html header {
   background: skyblue;
 }
 
+html header .navbrand {
+  color: white;
+  font-size: large;
+  padding-left: 0.5rem;
+  padding-right: 1rem;
+}
+
 html .sticky {
   position: fixed;
   z-index: 99;

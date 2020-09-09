@@ -24,11 +24,13 @@ function revealPage(page) {
   page.style.display = "block";
 }
 
-function addNavButtonListener() {
+
+function addNavButtonsListener(){
   const navButtons = document.querySelectorAll("header nav div ul a");
   navButtons.forEach((navButton) => {
     navButton.addEventListener("click", (event) => {
-      console.log(event.target);
+      navButtons.forEach((navButton)=>{navButton.classList.remove("active")})
+      event.target.classList.add("active")
     });
   });
 }
@@ -86,5 +88,5 @@ window.onload = function () {
   window.onhashchange = pageNavigator;
   addHashOnStart();
 
-  addNavButtonListener();
+  addNavButtonsListener();
 };

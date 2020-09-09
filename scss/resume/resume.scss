@@ -17,7 +17,7 @@ html {
       border-bottom: 1px white solid;
     }
 
-    &__content {
+    &__experience {
       width: 90%;
       margin-left: 5%;
       margin-top: 3%;
@@ -79,18 +79,18 @@ html {
       margin-bottom: 3%;
       .skill {
         &__title {
-            h3 {
-                padding: 1rem;
-              }
+          h3 {
+            padding: 1rem;
+          }
           text-align: left;
         }
         &__item {
           text-align: justify;
           margin-top: 1rem;
           margin-bottom: 1rem;
-          h4{
-              font-size: small;
-              margin-bottom: 1rem;
+          h4 {
+            font-size: small;
+            margin-bottom: 1rem;
           }
 
           .skillContainer {
@@ -133,7 +133,7 @@ html {
             width: 40%;
             background-color: skyblue;
           }
-          
+
           .skill4__p2 {
             height: 10px;
             width: 60%;
