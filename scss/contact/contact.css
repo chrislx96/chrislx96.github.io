@@ -103,9 +103,21 @@ html .contactPage__content .myform form p label {
 
 html .contactPage__content .myform form p input {
   border-radius: 5%;
+  background-color: whitesmoke;
+}
+
+html .contactPage__content .myform form p input:hover {
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
 }
 
 html .contactPage__content .myform form p textarea {
   border-radius: 5%;
+  background-color: whitesmoke;
+}
+
+html .contactPage__content .myform form p textarea:hover {
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
 }
 /*# sourceMappingURL=contact.css.map */
