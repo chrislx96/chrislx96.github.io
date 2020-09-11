@@ -42,7 +42,7 @@ html .background .container {
   color: white;
 }
 
-html .background .container .namecard {
+html .background .container .intro-page {
   height: auto;
   width: 80%;
   padding: 3%;
@@ -55,7 +55,7 @@ html .background .container .namecard {
   background-image: linear-gradient(#56bfe9, #b6d8e5);
 }
 
-html .background .container .namecard .photo {
+html .background .container .intro-page__left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -72,23 +72,23 @@ html .background .container .namecard .photo {
           flex-flow: column wrap;
 }
 
-html .background .container .namecard .photo__img {
+html .background .container .intro-page__left .avatar {
   height: auto;
   width: 50%;
   border-radius: 50%;
 }
 
-html .background .container .namecard .photo__description {
+html .background .container .intro-page__left .name-and-position {
   text-align: center;
   width: 100%;
   height: auto;
 }
 
-html .background .container .namecard .introduction {
+html .background .container .intro-page__right {
   width: 100%;
 }
 
-html .background .container .namecard .introduction__content {
+html .background .container .intro-page__right .intro-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,38 +101,31 @@ html .background .container .namecard .introduction__content {
   height: auto;
 }
 
-html .background .container .namecard .introduction__content .about-me {
+html .background .container .intro-page__right .intro-content__about-me {
   width: 100%;
 }
 
-html .background .container .namecard .introduction__content .about-me__title {
+html .background .container .intro-page__right .intro-content__about-me h3 {
   margin-top: 1rem;
   margin-bottom: 1rem;
   width: 100%;
   height: auto;
 }
 
-html .background .container .namecard .introduction__content .about-me__content {
-  padding: 8%;
+html .background .container .intro-page__right .intro-content__about-me p {
+  padding: 2%;
 }
 
-html .background .container .namecard .introduction__detail {
+html .background .container .intro-page__right .intro-content__info {
   width: 100%;
   padding: 0.6rem;
 }
 
-html .background .container .namecard .introduction__detail .col-4 {
+html .background .container .intro-page__right .intro-content__info .col-4 {
   width: 100%;
   height: auto;
   padding: 0.2rem;
   text-align: justify;
-}
-
-html .background .container .namecard .introduction__detail .col-8 {
-  width: 100%;
-  height: auto;
-  margin: 0;
-  padding: 0.2rem;
 }
 
 html .copyrights {
@@ -142,7 +135,7 @@ html .copyrights {
   bottom: 0px;
 }
 
-html .resumePage {
+html .resume-page {
   height: auto;
   width: 80%;
   max-height: 80%;
@@ -157,34 +150,34 @@ html .resumePage {
   font-size: smaller;
 }
 
-html .resumePage__header {
+html .resume-page__header {
   border-bottom: 1px white solid;
 }
 
-html .resumePage__header h2 {
+html .resume-page__header h2 {
   padding: 2rem;
 }
 
-html .resumePage__experience {
+html .resume-page__timeline {
   width: 90%;
   margin-left: 5%;
   margin-top: 3%;
   margin-bottom: 3%;
 }
 
-html .resumePage__experience .timeline__title {
+html .resume-page__timeline .timeline__title {
   text-align: left;
 }
 
-html .resumePage__experience .timeline__title h3 {
+html .resume-page__timeline .timeline__title h3 {
   padding: 1rem;
 }
 
-html .resumePage__experience .timeline__content {
+html .resume-page__timeline .timeline__content {
   border-left: 3px ridge white;
 }
 
-html .resumePage__experience .timeline__content__item {
+html .resume-page__timeline .timeline__content__item {
   border-left: solid;
   text-align: justify;
   position: relative;
@@ -195,12 +188,12 @@ html .resumePage__experience .timeline__content__item {
   border-left: 1px solid #1fa9e0;
 }
 
-html .resumePage__experience .timeline__content__item:hover {
+html .resume-page__timeline .timeline__content__item:hover {
   -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
 }
 
-html .resumePage__experience .timeline__content__item::before {
+html .resume-page__timeline .timeline__content__item::before {
   content: "";
   display: inline-block;
   position: absolute;
@@ -213,7 +206,7 @@ html .resumePage__experience .timeline__content__item::before {
   z-index: 2;
 }
 
-html .resumePage__experience .timeline__content__item::after {
+html .resume-page__timeline .timeline__content__item::after {
   content: "";
   display: inline-block;
   position: absolute;
@@ -225,33 +218,33 @@ html .resumePage__experience .timeline__content__item::after {
   z-index: 1;
 }
 
-html .resumePage__skill {
+html .resume-page__skill {
   width: 90%;
   margin-left: 5%;
   margin-top: 1%;
   margin-bottom: 3%;
 }
 
-html .resumePage__skill .skill__title {
+html .resume-page__skill .skill-block__title {
   text-align: left;
 }
 
-html .resumePage__skill .skill__title h3 {
+html .resume-page__skill .skill-block__title h3 {
   padding: 1rem;
 }
 
-html .resumePage__skill .skill__item {
+html .resume-page__skill .skill-block__item {
   text-align: justify;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
-html .resumePage__skill .skill__item h4 {
+html .resume-page__skill .skill-block__item h4 {
   font-size: small;
   margin-bottom: 1rem;
 }
 
-html .resumePage__skill .skill__item .skillContainer {
+html .resume-page__skill .skill-block__item .skill-percentage {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -259,81 +252,46 @@ html .resumePage__skill .skill__item .skillContainer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  background-color: white;
 }
 
-html .resumePage__skill .skill__item .skill1__p1 {
+html .resume-page__skill .skill-block__item .skill-percentage__skill1 {
   height: 10px;
   width: 80%;
   background-color: skyblue;
 }
 
-html .resumePage__skill .skill__item .skill1__p2 {
-  height: 10px;
-  width: 20%;
-  background-color: white;
-}
-
-html .resumePage__skill .skill__item .skill2__p1 {
+html .resume-page__skill .skill-block__item .skill-percentage__skill2 {
   height: 10px;
   width: 60%;
   background-color: skyblue;
 }
 
-html .resumePage__skill .skill__item .skill2__p2 {
-  height: 10px;
-  width: 40%;
-  background-color: white;
-}
-
-html .resumePage__skill .skill__item .skill3__p1 {
+html .resume-page__skill .skill-block__item .skill-percentage__skill3 {
   height: 10px;
   width: 50%;
   background-color: skyblue;
 }
 
-html .resumePage__skill .skill__item .skill3__p2 {
-  height: 10px;
-  width: 50%;
-  background-color: white;
-}
-
-html .resumePage__skill .skill__item .skill4__p1 {
+html .resume-page__skill .skill-block__item .skill-percentage__skill4 {
   height: 10px;
   width: 40%;
   background-color: skyblue;
 }
 
-html .resumePage__skill .skill__item .skill4__p2 {
-  height: 10px;
-  width: 60%;
-  background-color: white;
-}
-
-html .resumePage__skill .skill__item .skill5__p1 {
+html .resume-page__skill .skill-block__item .skill-percentage__skill5 {
   height: 10px;
   width: 90%;
   background-color: skyblue;
 }
 
-html .resumePage__skill .skill__item .skill5__p2 {
-  height: 10px;
-  width: 10%;
-  background-color: white;
-}
-
-html .resumePage__skill .skill__item .skill6__p1 {
+html .resume-page__skill .skill-block__item .skill-percentage__skill6 {
   height: 10px;
   width: 75%;
   background-color: skyblue;
 }
 
-html .resumePage__skill .skill__item .skill6__p2 {
-  height: 10px;
-  width: 25%;
-  background-color: white;
-}
-
-html .lifePage {
+html .hobby-page {
   height: auto;
   width: 80%;
   max-height: 80%;
@@ -348,26 +306,21 @@ html .lifePage {
   font-size: smaller;
 }
 
-html .lifePage__header {
+html .hobby-page__header {
   border-bottom: 1px white solid;
 }
 
-html .lifePage__header h2 {
+html .hobby-page__header h2 {
   padding: 2rem;
 }
 
-html .lifePage .hobby {
+html .hobby-page__content {
   font-size: smaller;
   margin-left: 3%;
   margin-right: 3%;
 }
 
-html .lifePage .hobby__title {
-  text-align: left;
-  margin-top: 2rem;
-}
-
-html .lifePage .hobby__item__img {
+html .hobby-page__content .hobby-item__img {
   margin: 20%;
   width: 50%;
   height: auto;
@@ -378,7 +331,7 @@ html .lifePage .hobby__item__img {
       align-self: center;
 }
 
-html .lifePage .hobby__item__img:hover {
+html .hobby-page__content .hobby-item__img:hover {
   -webkit-animation: pulse 1s infinite;
           animation: pulse 1s infinite;
   -webkit-animation-timing-function: linear;
@@ -415,12 +368,12 @@ html .lifePage .hobby__item__img:hover {
   }
 }
 
-html .lifePage .hobby__item p {
+html .hobby-page__content .hobby-item p {
   padding: 10%;
   text-align: justify;
 }
 
-html .contactPage {
+html .contact-page {
   height: auto;
   width: 80%;
   max-height: 80%;
@@ -435,25 +388,25 @@ html .contactPage {
   font-size: smaller;
 }
 
-html .contactPage__header {
+html .contact-page__header {
   border-bottom: 1px white solid;
 }
 
-html .contactPage__header h2 {
+html .contact-page__header h2 {
   padding: 2rem;
 }
 
-html .contactPage__content {
+html .contact-page__content {
   text-align: left;
 }
 
-html .contactPage__content h3 {
+html .contact-page__content h3 {
   padding-top: 1rem;
   width: 100%;
   padding-left: 15%;
 }
 
-html .contactPage__content .mycontact {
+html .contact-page__content .mycontact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -470,7 +423,7 @@ html .contactPage__content .mycontact {
           flex-flow: column wrap;
 }
 
-html .contactPage__content .mycontact__map {
+html .contact-page__content .mycontact__map {
   width: 75%;
   height: auto;
   border-radius: 10%;
@@ -478,7 +431,7 @@ html .contactPage__content .mycontact__map {
   margin-bottom: 1rem;
 }
 
-html .contactPage__content .mycontact__item {
+html .contact-page__content .mycontact__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -491,29 +444,29 @@ html .contactPage__content .mycontact__item {
   padding-left: 15%;
 }
 
-html .contactPage__content .mycontact__item img {
+html .contact-page__content .mycontact__item img {
   height: 100%;
   width: auto;
   margin-right: 0.6rem;
 }
 
-html .contactPage__content .mycontact__item:last-child {
+html .contact-page__content .mycontact__item:last-child {
   margin-bottom: 8%;
 }
 
-html .contactPage__content .myform {
+html .contact-page__content .myform {
   border-left: solid 1px;
 }
 
-html .contactPage__content .myform h3 {
+html .contact-page__content .myform h3 {
   padding-left: 15%;
 }
 
-html .contactPage__content .myform form {
+html .contact-page__content .myform form {
   margin-top: 2rem;
 }
 
-html .contactPage__content .myform form p {
+html .contact-page__content .myform form p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -525,27 +478,27 @@ html .contactPage__content .myform form p {
           align-items: center;
 }
 
-html .contactPage__content .myform form p label {
+html .contact-page__content .myform form p label {
   width: 20%;
   margin-right: 0.5rem;
 }
 
-html .contactPage__content .myform form p input {
+html .contact-page__content .myform form p input {
   border-radius: 5%;
   background-color: whitesmoke;
 }
 
-html .contactPage__content .myform form p input:hover {
+html .contact-page__content .myform form p input:hover {
   -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
 }
 
-html .contactPage__content .myform form p textarea {
+html .contact-page__content .myform form p textarea {
   border-radius: 5%;
   background-color: whitesmoke;
 }
 
-html .contactPage__content .myform form p textarea:hover {
+html .contact-page__content .myform form p textarea:hover {
   -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
 }

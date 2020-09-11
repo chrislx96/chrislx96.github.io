@@ -42,7 +42,7 @@ html .background .container {
   color: white;
 }
 
-html .background .container .namecard {
+html .background .container .intro-page {
   height: auto;
   width: 80%;
   padding: 3%;
@@ -55,7 +55,7 @@ html .background .container .namecard {
   background-image: linear-gradient(#56bfe9, #b6d8e5);
 }
 
-html .background .container .namecard .photo {
+html .background .container .intro-page__left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -72,23 +72,23 @@ html .background .container .namecard .photo {
           flex-flow: column wrap;
 }
 
-html .background .container .namecard .photo__img {
+html .background .container .intro-page__left .avatar {
   height: auto;
   width: 50%;
   border-radius: 50%;
 }
 
-html .background .container .namecard .photo__description {
+html .background .container .intro-page__left .name-and-position {
   text-align: center;
   width: 100%;
   height: auto;
 }
 
-html .background .container .namecard .introduction {
+html .background .container .intro-page__right {
   width: 100%;
 }
 
-html .background .container .namecard .introduction__content {
+html .background .container .intro-page__right .intro-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,38 +101,31 @@ html .background .container .namecard .introduction__content {
   height: auto;
 }
 
-html .background .container .namecard .introduction__content .about-me {
+html .background .container .intro-page__right .intro-content__about-me {
   width: 100%;
 }
 
-html .background .container .namecard .introduction__content .about-me__title {
+html .background .container .intro-page__right .intro-content__about-me h3 {
   margin-top: 1rem;
   margin-bottom: 1rem;
   width: 100%;
   height: auto;
 }
 
-html .background .container .namecard .introduction__content .about-me__content {
-  padding: 8%;
+html .background .container .intro-page__right .intro-content__about-me p {
+  padding: 2%;
 }
 
-html .background .container .namecard .introduction__detail {
+html .background .container .intro-page__right .intro-content__info {
   width: 100%;
   padding: 0.6rem;
 }
 
-html .background .container .namecard .introduction__detail .col-4 {
+html .background .container .intro-page__right .intro-content__info .col-4 {
   width: 100%;
   height: auto;
   padding: 0.2rem;
   text-align: justify;
-}
-
-html .background .container .namecard .introduction__detail .col-8 {
-  width: 100%;
-  height: auto;
-  margin: 0;
-  padding: 0.2rem;
 }
 
 html .copyrights {

@@ -1,5 +1,5 @@
 html {
-  .contactPage {
+  .contact-page {
     height: auto;
     width: 80%;
     max-height: 80%;
@@ -11,24 +11,29 @@ html {
     font-size: smaller;
 
     &__header {
+      border-bottom: 1px white solid;
+
       h2 {
         padding: 2rem;
       }
-      border-bottom: 1px white solid;
     }
+
     &__content {
       text-align: left;
+
       h3 {
         padding-top: 1rem;
         width: 100%;
         padding-left: 15%;
       }
+
       .mycontact {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
         align-items: center;
         flex-flow: column wrap;
+
         &__map {
           width: 75%;
           height: auto;
@@ -36,48 +41,59 @@ html {
           margin-top: 1rem;
           margin-bottom: 1rem;
         }
+
         &__item {
           display: flex;
           flex-direction: row;
           width: 100%;
           padding: 0.3rem;
           padding-left: 15%;
+
           img {
             height: 100%;
             width: auto;
             margin-right: 0.6rem;
           }
+
           &:last-child {
             margin-bottom: 8%;
           }
         }
       }
+
       .myform {
         border-left: solid 1px;
+
         h3 {
           padding-left: 15%;
         }
+
         form {
-         
           margin-top: 2rem;
+
           p {
             display: flex;
             justify-content: center;
             align-items: center;
+
             label {
               width: 20%;
               margin-right: 0.5rem;
             }
+
             input {
               border-radius: 5%;
               background-color: whitesmoke;
+
               &:hover {
                 box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
               }
             }
+
             textarea {
               border-radius: 5%;
               background-color: whitesmoke;
+
               &:hover {
                 box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
               }

@@ -32,7 +32,8 @@ html {
       align-content: center;
       justify-content: center;
       color: white;
-      .namecard {
+
+      .intro-page {
         height: auto;
         width: 80%;
         padding: 3%;
@@ -43,64 +44,62 @@ html {
           rgb(86, 191, 233),
           rgb(182, 216, 229)
         );
-        .photo {
+
+        &__left {
           display: flex;
           flex-wrap: wrap;
           justify-content: space-around;
           align-items: center;
           flex-flow: column wrap;
 
-          &__img {
+          .avatar {
             height: auto;
             width: 50%;
             border-radius: 50%;
           }
 
-          &__description {
+          .name-and-position {
             text-align: center;
             width: 100%;
             height: auto;
           }
         }
 
-        .introduction {
+        &__right {
           width: 100%;
 
-          &__content {
+          .intro-content {
             display: flex;
             flex-direction: column;
             text-align: justify;
             width: 100%;
             height: auto;
 
-            .about-me {
+            &__about-me {
               width: 100%;
-              &__title {
+
+              h3 {
                 margin-top: 1rem;
                 margin-bottom: 1rem;
                 width: 100%;
                 height: auto;
               }
-              &__content {
-                padding: 8%;
+
+              p {
+                padding: 2%;
               }
             }
-          }
 
-          &__detail {
-            width: 100%;
-            padding: 0.6rem;
-            .col-4 {
+            &__info {
               width: 100%;
-              height: auto;
-              padding: 0.2rem;
-              text-align: justify;
-            }
-            .col-8 {
-              width: 100%;
-              height: auto;
-              margin: 0;
-              padding: 0.2rem;
+              padding: 0.6rem;
+
+              .col-4 {
+                width: 100%;
+                height: auto;
+                padding: 0.2rem;
+                text-align: justify;
+              }
             }
           }
         }

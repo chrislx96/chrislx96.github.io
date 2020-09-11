@@ -7,7 +7,7 @@ let allPages;
 function init() {
   introPage = document.querySelector('main > section[data-page="intro"]');
   resumePage = document.querySelector('main > section[data-page="resume"]');
-  lifePage = document.querySelector('main > section[data-page="life"]');
+  lifePage = document.querySelector('main > section[data-page="hobby"]');
   contactPage = document.querySelector('main > section[data-page="contact"]');
   allPages = document.querySelectorAll("main section");
   hideAllPages();
@@ -24,13 +24,14 @@ function revealPage(page) {
   page.style.display = "block";
 }
 
-
-function addNavButtonsListener(){
+function addNavButtonsListener() {
   const navButtons = document.querySelectorAll("header nav div ul a");
   navButtons.forEach((navButton) => {
     navButton.addEventListener("click", (event) => {
-      navButtons.forEach((navButton)=>{navButton.classList.remove("active")})
-      event.target.classList.add("active")
+      navButtons.forEach((navButton) => {
+        navButton.classList.remove("active");
+      });
+      event.target.classList.add("active");
     });
   });
 }
@@ -53,7 +54,7 @@ function pageNavigator() {
       revealPage(resumePage);
       break;
     }
-    case "#life": {
+    case "#hobby": {
       hideAllPages();
       revealPage(lifePage);
       break;
@@ -84,9 +85,7 @@ window.onscroll = function () {
 
 window.onload = function () {
   init();
-
   window.onhashchange = pageNavigator;
   addHashOnStart();
-
   addNavButtonsListener();
 };

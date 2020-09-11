@@ -1,5 +1,5 @@
 html {
-  .resumePage {
+  .resume-page {
     height: auto;
     width: 80%;
     max-height: 80%;
@@ -11,13 +11,14 @@ html {
     font-size: smaller;
 
     &__header {
+      border-bottom: 1px white solid;
+
       h2 {
         padding: 2rem;
       }
-      border-bottom: 1px white solid;
     }
 
-    &__experience {
+    &__timeline {
       width: 90%;
       margin-left: 5%;
       margin-top: 3%;
@@ -25,11 +26,13 @@ html {
 
       .timeline {
         &__title {
+          text-align: left;
+
           h3 {
             padding: 1rem;
           }
-          text-align: left;
         }
+
         &__content {
           border-left: 3px ridge white;
 
@@ -42,9 +45,11 @@ html {
             margin-bottom: 20px;
             border: 1px solid rgb(184, 218, 231);
             border-left: 1px solid rgb(31, 169, 224);
+
             &:hover {
               box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
             }
+
             &::before {
               content: "";
               display: inline-block;
@@ -57,6 +62,7 @@ html {
               border: 1px solid rgb(31, 169, 224);
               z-index: 2;
             }
+
             &::after {
               content: "";
               display: inline-block;
@@ -77,87 +83,66 @@ html {
       margin-left: 5%;
       margin-top: 1%;
       margin-bottom: 3%;
-      .skill {
+
+      .skill-block {
         &__title {
+          text-align: left;
+
           h3 {
             padding: 1rem;
           }
-          text-align: left;
         }
+
         &__item {
           text-align: justify;
           margin-top: 1rem;
           margin-bottom: 1rem;
+
           h4 {
             font-size: small;
             margin-bottom: 1rem;
           }
 
-          .skillContainer {
+          .skill-percentage {
             display: flex;
             flex-direction: row;
-          }
+            background-color: white;
 
-          .skill1__p1 {
-            height: 10px;
-            width: 80%;
-            background-color: skyblue;
-          }
-          .skill1__p2 {
-            height: 10px;
-            width: 20%;
-            background-color: white;
-          }
-          .skill2__p1 {
-            height: 10px;
-            width: 60%;
-            background-color: skyblue;
-          }
-          .skill2__p2 {
-            height: 10px;
-            width: 40%;
-            background-color: white;
-          }
-          .skill3__p1 {
-            height: 10px;
-            width: 50%;
-            background-color: skyblue;
-          }
-          .skill3__p2 {
-            height: 10px;
-            width: 50%;
-            background-color: white;
-          }
-          .skill4__p1 {
-            height: 10px;
-            width: 40%;
-            background-color: skyblue;
-          }
+            &__skill1 {
+              height: 10px;
+              width: 80%;
+              background-color: skyblue;
+            }
 
-          .skill4__p2 {
-            height: 10px;
-            width: 60%;
-            background-color: white;
-          }
-          .skill5__p1 {
-            height: 10px;
-            width: 90%;
-            background-color: skyblue;
-          }
-          .skill5__p2 {
-            height: 10px;
-            width: 10%;
-            background-color: white;
-          }
-          .skill6__p1 {
-            height: 10px;
-            width: 75%;
-            background-color: skyblue;
-          }
-          .skill6__p2 {
-            height: 10px;
-            width: 25%;
-            background-color: white;
+            &__skill2 {
+              height: 10px;
+              width: 60%;
+              background-color: skyblue;
+            }
+
+            &__skill3 {
+              height: 10px;
+              width: 50%;
+              background-color: skyblue;
+            }
+
+            &__skill4 {
+              height: 10px;
+              width: 40%;
+              background-color: skyblue;
+            }
+
+            &__skill5 {
+              height: 10px;
+              width: 90%;
+              background-color: skyblue;
+            }
+
+            &__skill6 {
+              height: 10px;
+              width: 75%;
+              background-color: skyblue;
+            }
           }
         }
       }
