@@ -426,7 +426,7 @@ html .contact-page__content .mycontact {
 html .contact-page__content .mycontact__map {
   width: 75%;
   height: auto;
-  border-radius: 10%;
+  border-radius: 50%;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
@@ -452,10 +452,6 @@ html .contact-page__content .mycontact__item img {
 
 html .contact-page__content .mycontact__item:last-child {
   margin-bottom: 8%;
-}
-
-html .contact-page__content .myform {
-  border-left: solid 1px;
 }
 
 html .contact-page__content .myform h3 {

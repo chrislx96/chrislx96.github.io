@@ -1,8 +1,14 @@
+import App from './App';
+import React from 'react';
+import ReactDOM from 'react-dom';
+
 let introPage;
 let resumePage;
 let lifePage;
 let contactPage;
 let allPages;
+
+ReactDOM.render((<App />),document.querySelector('#root'));
 
 function init() {
   introPage = document.querySelector('main > section[data-page="intro"]');
