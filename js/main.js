@@ -1,6 +1,6 @@
-import App from './App';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from '../react_components/App.jsx';
 
 let introPage;
 let resumePage;
@@ -16,7 +16,6 @@ function init() {
   lifePage = document.querySelector('main > section[data-page="hobby"]');
   contactPage = document.querySelector('main > section[data-page="contact"]');
   allPages = document.querySelectorAll("main section");
-  hideAllPages();
   revealPage(introPage);
 }
 
@@ -27,6 +26,7 @@ function hideAllPages() {
 }
 
 function revealPage(page) {
+  hideAllPages();
   page.style.display = "block";
 }
 
@@ -51,22 +51,18 @@ function addHashOnStart() {
 function pageNavigator() {
   switch (location.hash) {
     case "#intro": {
-      hideAllPages();
       revealPage(introPage);
       break;
     }
     case "#resume": {
-      hideAllPages();
       revealPage(resumePage);
       break;
     }
     case "#hobby": {
-      hideAllPages();
       revealPage(lifePage);
       break;
     }
     case "#contact": {
-      hideAllPages();
       revealPage(contactPage);
       break;
     }
@@ -85,9 +81,8 @@ function stickyHeader() {
   }
 }
 
-window.onscroll = function () {
-  stickyHeader();
-};
+window.onscroll = stickyHeader;
+
 
 window.onload = function () {
   init();
