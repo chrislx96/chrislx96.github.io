@@ -13,6 +13,10 @@ html header .navbrand {
   padding-right: 1rem;
 }
 
+html header .navbar-right__img {
+  padding-right: 0.5rem;
+}
+
 html .sticky {
   position: fixed;
   z-index: 99;

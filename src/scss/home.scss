@@ -5,11 +5,18 @@ html {
 
   header {
     background: skyblue;
+
     .navbrand {
       color: white;
       font-size: large;
       padding-left: 0.5rem;
       padding-right: 1rem;
+    }
+
+    .navbar-right {
+      &__img {
+        padding-right: 0.5rem;
+      }
     }
   }
 

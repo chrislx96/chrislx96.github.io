@@ -2,7 +2,7 @@ import React from "react";
 
 const SocialMediaItem = (props) => (
   <>
-    <a href={props.children} target="_blank">
+    <a className="navbar-right__img" href={props.children} target="_blank">
       <img src={props.img} />
     </a>
   </>

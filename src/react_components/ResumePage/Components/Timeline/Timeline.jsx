@@ -23,18 +23,20 @@ const Timeline = () => (
     </div>
     <div className="timeline col-md-6 col-sm-12">
       <Title>Work</Title>
-      <Item>
-        D. Lorem ipsum dolor sit amet, consectetur adipisicing elit. In
-        consequuntur iste blanditiis aperiam soluta itaque neque.
-      </Item>
-      <Item>
-        E. Lorem ipsum dolor sit amet, consectetur adipisicing elit. In
-        consequuntur iste blanditiis aperiam soluta itaque neque.
-      </Item>
-      <Item>
-        F. Lorem ipsum dolor sit amet, consectetur adipisicing elit. In
-        consequuntur iste blanditiis aperiam soluta itaque neque.
-      </Item>
+      <div className="timeline__content">
+        <Item>
+          D. Lorem ipsum dolor sit amet, consectetur adipisicing elit. In
+          consequuntur iste blanditiis aperiam soluta itaque neque.
+        </Item>
+        <Item>
+          E. Lorem ipsum dolor sit amet, consectetur adipisicing elit. In
+          consequuntur iste blanditiis aperiam soluta itaque neque.
+        </Item>
+        <Item>
+          F. Lorem ipsum dolor sit amet, consectetur adipisicing elit. In
+          consequuntur iste blanditiis aperiam soluta itaque neque.
+        </Item>
+      </div>
     </div>
   </div>
 );
