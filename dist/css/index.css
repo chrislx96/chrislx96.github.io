@@ -255,39 +255,8 @@ html .resume-page__skill .skill-block__item .skill-percentage {
   background-color: white;
 }
 
-html .resume-page__skill .skill-block__item .skill-percentage__skill1 {
+html .resume-page__skill .skill-block__item .skill-percentage__bar {
   height: 10px;
-  width: 80%;
-  background-color: skyblue;
-}
-
-html .resume-page__skill .skill-block__item .skill-percentage__skill2 {
-  height: 10px;
-  width: 60%;
-  background-color: skyblue;
-}
-
-html .resume-page__skill .skill-block__item .skill-percentage__skill3 {
-  height: 10px;
-  width: 50%;
-  background-color: skyblue;
-}
-
-html .resume-page__skill .skill-block__item .skill-percentage__skill4 {
-  height: 10px;
-  width: 40%;
-  background-color: skyblue;
-}
-
-html .resume-page__skill .skill-block__item .skill-percentage__skill5 {
-  height: 10px;
-  width: 90%;
-  background-color: skyblue;
-}
-
-html .resume-page__skill .skill-block__item .skill-percentage__skill6 {
-  height: 10px;
-  width: 75%;
   background-color: skyblue;
 }
 
