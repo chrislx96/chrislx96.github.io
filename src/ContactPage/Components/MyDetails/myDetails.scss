@@ -1,0 +1,20 @@
+.mycontact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+
+  h3{
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .map {
+    width: 20rem;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}

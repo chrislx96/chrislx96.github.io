@@ -1,0 +1,16 @@
+.item {
+    display: flex;
+    flex-direction: row;
+    width: 10rem;
+    padding: 0.3rem;
+
+    img {
+      height: 100%;
+      width: auto;
+      margin-right: 0.6rem;
+    }
+
+    &:last-child {
+      margin-bottom: 8%;
+    }
+  }

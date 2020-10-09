@@ -1,0 +1,21 @@
+.skillItem {
+  text-align: justify;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  h4 {
+    font-size: small;
+    margin-bottom: 1rem;
+  }
+
+  .skillBar {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+
+    .skillProficiency {
+      height: 10px;
+      background-color: skyblue;
+    }
+  }
+}

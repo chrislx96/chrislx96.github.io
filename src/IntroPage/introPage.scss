@@ -1,0 +1,29 @@
+.introPage {
+  height: auto;
+  width: 80%;
+  padding: 3%;
+  border-radius: 4%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  background-image: linear-gradient(rgb(86, 191, 233), rgb(182, 216, 229));  
+}
+.leftPage{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+.rightPage {
+  width: 100%;
+  padding-left: 3rem;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    width: 100%;
+    height: auto;
+  }
+}

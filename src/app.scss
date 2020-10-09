@@ -1,0 +1,22 @@
+$primary: rgb(233, 244, 248);
+
+main{
+  font-size: x-large;
+}
+
+.background {
+  min-height: 90vh;
+  background-image: linear-gradient(skyblue, white);
+}
+
+.container {
+  min-height: 90vh;
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  color: white;
+}
+
+

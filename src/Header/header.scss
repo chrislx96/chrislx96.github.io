@@ -1,0 +1,21 @@
+header {
+  background: skyblue;
+
+  .navbrand {
+    color: white;
+    font-size: large;
+    padding-left: 0.5rem;
+    padding-right: 1rem;
+  }
+
+  img {
+    padding-right: 0.5rem;
+  }
+}
+
+.sticky {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  width: 100%;
+}

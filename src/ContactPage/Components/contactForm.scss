@@ -1,0 +1,39 @@
+.myform {
+    h3 {
+      text-align: center;
+      padding-left: 0;
+    }
+  
+    form {
+      margin-top: 2rem;
+  
+      p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  
+        label {
+          width: 20%;
+          margin-right: 0.5rem;
+        }
+  
+        input {
+          border-radius: 5%;
+          background-color: whitesmoke;
+  
+          &:hover {
+            box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+          }
+        }
+  
+        textarea {
+          border-radius: 5%;
+          background-color: whitesmoke;
+  
+          &:hover {
+            box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+          }
+        }
+      }
+    }
+  }
